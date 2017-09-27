@@ -2,7 +2,7 @@ body {
 	background: white;
 	margin: auto;
 	width: 100%;
-	padding: 10px
+	padding: 5px
 }
 .column0 {
 	text-align: center;
@@ -14,7 +14,7 @@ body {
 	text-align: center;
 	background: pink;
 	height: auto;
-	width: 400px;
+	max-width: 300px;
     margin: auto;
 }
 .column2 {
