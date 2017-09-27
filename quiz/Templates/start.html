@@ -9,26 +9,25 @@
 	<link href="static/style.css" rel="stylesheet">
 </head>
 <body>	
-<div class="container-fluid">
-		<div class="row">
+<div class="container">
 			<div class= "col-md-12 column0">	
 	<h1>Yay! It's quiz o´clock</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra justo felis, nec aliquam ligula luctus ac. Fusce ut diam neque. Phasellus dapibus, lacus sit amet rhoncus dignissim, nunc orci luctus neque, id blandit nibh ante aliquet sem. Duis dictum, quam nec convallis auctor, augue justo pellentesque dui, eget ullamcorper orci mi nec mauris.</p>
 
+	<p><h3>Choose a quiz!</h3></p>
+
+</div>	
+	
+<div class="container">	
 	{% for quiz in quizzes %}
-	<p><a href="{% url 'quiz_page' quiz.quiz_number %}">
-	{{ quiz.name }}</a></p>
-	{% endfor %}
-			</div>
-		</div>
+		<div class= "col-md-4 column1"><h3>{{ quiz.name }}</h2>
+                <p>{{ quiz.description }}</p>
+			<button><a href="{% url 'quiz_page' quiz.quiz_number %}">Starta quiz!</a>
 	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-4 column1"><h2>QUIZ 1</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra justo felis, nec aliquam ligula luctus ac. Fusce ut diam neque. Phasellus dapibus, lacus sit amet rhoncus dignissim, nunc orci luctus neque, id blandit nibh ante aliquet sem. Duis dictum, quam nec convallis auctor, augue justo pellentesque dui, eget ullamcorper orci mi nec mauris.<br><br><button><a href="file:///Users/teresavikstedt/Desktop/tjejer_kodar/quiz-templates/quiz.html"> Gör quiz!</a></button></br></p></div>
-			<div class="col-md-4 column2"><h2>QUIZ 2</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra justo felis, nec aliquam ligula luctus ac. Fusce ut diam neque. Phasellus dapibus, lacus sit amet rhoncus dignissim, nunc orci luctus neque, id blandit nibh ante aliquet sem. Duis dictum, quam nec convallis auctor, augue justo pellentesque dui, eget ullamcorper orci mi nec mauris.<br><br><button><a href="http://google.com"> Gör quiz!</a></button></br></p></div>
-			<div class="col-md-4 column3"><h2>QUIZ 3</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra justo felis, nec aliquam ligula luctus ac. Fusce ut diam neque. Phasellus dapibus, lacus sit amet rhoncus dignissim, nunc orci luctus neque, id blandit nibh ante aliquet sem. Duis dictum, quam nec convallis auctor, augue justo pellentesque dui, eget ullamcorper orci mi nec mauris.<br><br><button><a href="http://google.com"> Gör quiz!</a></button></br></p></div>
-		</div>
-	</div>	
+	{% endfor %}
+</div>	
+
+
 	<script src="https://ajax.googleapsis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	</div>

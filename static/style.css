@@ -12,7 +12,7 @@ body {
 }
 .column1 {
 	text-align: center;
-	background: white;
+	background: pink;
 	height: auto;
 	width: 400px;
     margin: auto;
@@ -33,13 +33,13 @@ body {
 }
 .column5 {
 	text-align: center;
-	background: white;
+	background: grey;
 	height: auto;
 	width: 400px;
     margin: auto;
 }
 .button {
-    background-color: #000000;
+    background-color: black;
     border: none;
     color: white;
     padding: 15px 32px;
