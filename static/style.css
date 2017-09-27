@@ -1,0 +1,55 @@
+body {
+	background: white;
+	margin: auto;
+	width: 100%;
+	padding: 10px
+}
+.column0 {
+	text-align: center;
+	background: white;
+	margin: auto;
+    width: 70%;
+}
+.column1 {
+	text-align: center;
+	background: white;
+	height: auto;
+	width: 400px;
+    margin: auto;
+}
+.column2 {
+	text-align: center;
+	background: white;
+	height: auto;
+	width: 400px;
+	margin: auto;
+}
+.column3 {
+	text-align: center;
+	background: white;
+	height: auto;
+	width: 400px;
+    margin: auto;
+}
+.column5 {
+	text-align: center;
+	background: white;
+	height: auto;
+	width: 400px;
+    margin: auto;
+}
+.button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+img {
+	width: 100%;
+	margin: 0 auto;
+}
