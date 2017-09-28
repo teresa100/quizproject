@@ -14,13 +14,14 @@
 	<div class="container2">
 		<div class="row">
 			<div class="col-md-12 column3"><h1>{{ question_number }}. {{ question }}</h1>
-	<form>
-         <input type="radio" name="gender" value="male" checked> {{ answer1 }}<br>
-         <input type="radio" name="gender" value="female"> {{ answer2 }}<br>
-         <input type="radio" name="gender" value="other"> {{ answer3 }}<br><br>
-    </form>
+	<form><form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">
+		{% csrf_token %}
+         <input type="radio" name="answer" value="1" checked> {{ answer1 }}<br>
+         <input type="radio" name="answer" value="2"> {{ answer2 }}<br>
+         <input type="radio" name="answer1" value="3"> {{ answer3 }}<br><br>
+         <button type="submit">Nästa</button>button>
 
-<p><a href="{% url 'completed_page' quiz_number %}"><Button>Nästa</a></p>
+    </form>
 	</div>
 		</div>
 			</div>
