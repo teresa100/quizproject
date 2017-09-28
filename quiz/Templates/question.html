@@ -14,13 +14,17 @@
 	<div class="container2">
 		<div class="row">
 			<div class="col-md-12 column3"><h1>{{ question_number }}. {{ question }}</h1>
-	<p>{{ answer1 }}</p>
-	<p>{{ answer2 }}</p>
-	<p>{{ answer3 }}</p>
+	<form>
+         <input type="radio" name="gender" value="male" checked> {{ answer1 }}<br>
+         <input type="radio" name="gender" value="female"> {{ answer2 }}<br>
+         <input type="radio" name="gender" value="other"> {{ answer3 }}<br><br>
+    </form>
 
 <p><a href="{% url 'completed_page' quiz_number %}"><Button>Nästa</a></p>
+	</div>
+		</div>
+			</div>
 <script src="https://ajax.googleapsis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="/static/js/bootstrap.min.js"></script>
-	</div>
 </body>
 </html>
