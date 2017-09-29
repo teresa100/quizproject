@@ -1,43 +1,44 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>RESULT!!</title>
-	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/static/style.css" rel="stylesheet">
-</head>
-<body class="background3">
-<div class="container1">
-			<div class= "col-md-12 column0">
+	<!doctype html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>RESULT!!</title>
+		<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/static/style.css" rel="stylesheet">
+	</head>
+
+	<body class="background3">
+	<div class="container1">
+		<div class= "col-md-4">
 				<div id="overlay"><img src="/static/fireworks.gif" alt="yay"/></div>
-	<h1>{% if correct > 3 %}
-		{{ correct }} av {{ total }} <br> Yay! Du älskar glass!
-	{% elif correct > 1 %}
-		{{ correct }} av {{ total }} <br>Det här gick helt ok.
-	{% else %}
-   	 	{{ correct }} av {{ total }} <br>Bu! Du älskar inte glass.
-    {% endif %}
-</h1>
+					<h1>
+					{% if correct > 3 %}
+						{{ correct }} av {{ total }} <br> Yay! Du älskar glass!
+					{% elif correct > 1 %}
+						{{ correct }} av {{ total }} <br>Det här gick helt ok.
+					{% else %}
+	   	 				{{ correct }} av {{ total }} <br>Bu! Du älskar inte glass.
+	    			{% endif %}
+					</h1>
+					<img src="/static/more-quiz.gif" alt="more-quizzes">
+		</div>
+	</div>
+
+	<div class="container2">	
+		{% for quiz in quizzes %}
+			<div class= "col-md-4 column2"><h3>{{ quiz.name }}</h2>
+	                <p>{{ quiz.description }}</p>
+				<button><a href="{% url 'quiz_page' quiz.quiz_number %}">Starta quiz!</a>
 			</div>
-<img src="/static/more-quiz.gif" alt="more-quizzes">
+		{% endfor %}
+		<br><p><a href="{% url 'start_page' %}">Till Startsidan</a></p>
+	</div>	
 
-</div>
 
-<div class="container2">	
-	{% for quiz in quizzes %}
-		<div class= "col-md-4 column1"><h3>{{ quiz.name }}</h2>
-                <p>{{ quiz.description }}</p>
-			<button><a href="{% url 'quiz_page' quiz.quiz_number %}">Starta quiz!</a>
-	</div>
-	{% endfor %}
-</div>	
-<div class="container3">
-		<div class="col-md-12"><p><a href="{% url 'start_page' %}">Till Startsidan</a></p>
-
-<script src="https://ajax.googleapsis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="/static/js/bootstrap.min.js"></script>
-	</div>
-</body>
-</html>
+	<script src="https://ajax.googleapsis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+		</div>
+	</body>
+	</html>

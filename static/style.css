@@ -34,54 +34,41 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-size: 12pt;
-    font-family: helvetica;
+    font-family: helvetica;  
  }
 .container1 {
 	text-align: center;
 	max-width: 900px;
     margin: auto;
     padding: 30px 30px;
- }   
-.column0 {
-	position: auto;
-	text-align: center;
-	margin: auto;
-    width: 80%;
-    margin: auto;
-    padding: 30px 10px 10px 100px;
-}
+
+/* din banner container */
+ } 
 .container2 {
-	max-width: 800px;
+	text-align: center;
+	max-width: 300px;
 	height: 300px;
     margin: auto;
     padding: 30px 30px;
 }
+
+/*din till startsidan container */
 .container3 {
 	text-align: center;
     padding: 30px 30px;
 }
-.column1 {
-	position: auto;
-	border-radius: 35px;
-	text-align: center;
-	background: pink;
-	max-width: 500px;
-	max-height: 350px;
-	margin: auto;
-	padding: 30px 30px 30px 30px; 
-	height: 100%;
-
-}
+/*din kolumn på startsidan*/
 .column2 {
 	border-radius: 35px;
 	text-align: center;
 	background: pink;
-	max-width: 500px;
+	max-width: 400px;
 	max-height: 350px;
 	margin: auto;
 	padding: 30px 30px 30px 30px;
-
 }
+
+/*din questions sida kolumn */
 .column3 {
 	align-items: 50%;
 	border-radius: 35px;
