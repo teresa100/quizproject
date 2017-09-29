@@ -47,6 +47,7 @@ p {
 }
 .container2 {
 	max-width: 800px;
+	min-height: auto;
     margin: auto;
     padding: 30px 30px;
 }
