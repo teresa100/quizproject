@@ -18,7 +18,7 @@
 		
 	<div class="row">	
 		{% for quiz in quizzes %}
-			<div class= "col-md-6 column3"><h3>{{ quiz.name }}</h2>
+			<div class= "col-md-6 column2"><h3>{{ quiz.name }}</h2>
 	                <p>{{ quiz.description }}</p>
 				<button><a href="{% url 'quiz_page' quiz.quiz_number %}">Starta quiz!</a>
 		</div>
