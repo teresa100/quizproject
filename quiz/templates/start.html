@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="/static/style.css">
 	</head>
 
-	<body class="background1">
+	<body background="/static/glass-melted.jpg"
 
 			<div class = "row">
 				<div class ="col-md-12 column1">
@@ -21,11 +21,11 @@
 				{% for quiz in quizzes %}
 				<div class= "col-md-6 column2"><h2>{{ quiz.name }}</h2>
 	                <p>{{ quiz.description }}</p>
-					<button><a href="{% url 'quiz_page' quiz.quiz_number %}">Starta quiz!</a>
+					<button><a href="{% url 'quiz_page' quiz.quiz_number %}">Starta quiz!</a></button>
 				</div>
 				{% endfor %}
 			</div>	
-			
+
 		<script src="https://ajax.googleapsis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="/static/js/bootstrap.min.js"></script>
 	</body>
