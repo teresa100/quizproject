@@ -20,14 +20,12 @@
 		
 	<div class="row">	
 		{% for quiz in quizzes %}
-			<div class= "col-md-4 column2"><h3>{{ quiz.name }}</h2>
+			<div class= "col-md-6 column2"><h3>{{ quiz.name }}</h2>
 	                <p>{{ quiz.description }}</p>
 				<button><a href="{% url 'quiz_page' quiz.quiz_number %}">Starta quiz!</a>
 		</div>
 		{% endfor %}
 	</div>	
-
-
 		<script src="https://ajax.googleapsis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="/static/js/bootstrap.min.js"></script>
 	</body>

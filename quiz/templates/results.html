@@ -11,7 +11,7 @@
 
 	<body class="background3">
 	<div class="container1">
-		<div class= "col-md-4">
+		<div class= "col-md-12">
 				<div id="overlay"><img src="/static/fireworks.gif" alt="yay"/></div>
 					<h1>
 					{% if correct > 3 %}
@@ -28,7 +28,7 @@
 
 	<div class="container2">	
 		{% for quiz in quizzes %}
-			<div class= "col-md-4 column2"><h3>{{ quiz.name }}</h2>
+			<div class= "col-md-6 column2"><h3>{{ quiz.name }}</h2>
 	                <p>{{ quiz.description }}</p>
 				<button><a href="{% url 'quiz_page' quiz.quiz_number %}">Starta quiz!</a>
 			</div>
