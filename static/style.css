@@ -31,6 +31,7 @@ p {
     padding: 30px 30px;
  }   
 .column0 {
+	position: auto;
 	text-align: center;
 	margin: auto;
     width: 80%;
@@ -42,7 +43,13 @@ p {
     margin: auto;
     padding: 30px 30px;
 }
+.container3 {
+	position: auto;
+    margin: auto;
+    padding: 30px 30px;
+}
 .column1 {
+	position: auto;
 	border-radius: 35px;
 	text-align: center;
 	background: pink;
@@ -93,9 +100,10 @@ button {
     font-size: 16px;
 }
 img {
+	position: auto;
 	max-width: 300px;
-    margin: auto;
-    padding: 30px 30px;
+	margin: auto;
+	padding: 30px 30px;
 }
 #overlay {
 	position: absolute;
