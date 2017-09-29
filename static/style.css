@@ -1,10 +1,13 @@
- html{
-    height: 100%;
+html {
+	height: 100%
 }
+
+
 body {
-	height: 100%;
 	font-size: 12pt;
-    font-family: helvetica;}
+    font-family: helvetica;
+}
+
 h1 {
     color: black;
 }
@@ -14,6 +17,37 @@ a {
 p {
     padding-bottom: 5px;
 }
+
+
+/* din översta kolumn på startsidan och sista sidan */
+.column1 {
+	text-align: center;
+    margin: auto;
+    padding: 30px 30px;
+ } 
+
+/*din nästa kolumn på startsidan och sista sidan*/
+.column2 {
+	border-radius: 35px;
+	text-align: center;
+	background: none;
+	max-width: 800px;
+	max-height: 350px;
+	margin: auto;
+	padding: 30px 30px 30px 30px;
+}
+
+/*din questions sida kolumn */
+.column3 {
+	align-items: 50%;
+	border-radius: 35px;
+	text-align: left;
+	max-width: 500px;
+	max-height: 350px;
+	margin: auto;
+	padding: 30px 30px 30px 30px;
+}
+
 .background1 {
 	background: url(/static/glass3.jpg);
 	background-repeat: no-repeat;
@@ -37,58 +71,7 @@ p {
     font-family: helvetica;  
  }
 
- /*din översta container på sista sidan */
-.container1 {
-	text-align: center;
-    margin: auto;
-    padding: 30px 30px;
 
-/* din banner container på startsidan och sista sidan*/
- } 
-.container2 {
-	text-align: center;
-	height: 300px;
-    margin: auto;
-    padding: 30px 30px;
-   	background: pink;
-}
-
-/*din till startsidan container */
-.container3 {
-	text-align: center;
-    padding: 30px 30px;
-}
-/*din kolumn på startsidan*/
-.column2 {
-	border-radius: 35px;
-	text-align: center;
-	background: none;
-	max-width: 800px;
-	max-height: 350px;
-	margin: auto;
-	padding: 30px 30px 30px 30px;
-}
-
-/*din questions sida kolumn */
-.column3 {
-	align-items: 50%;
-	border-radius: 35px;
-	text-align: left;
-	max-width: 500px;
-	max-height: 350px;
-	margin: auto;
-	padding: 30px 30px 30px 30px;
-}
-.column4 {
-	align-items: 50%;
-	border-radius: 35px;
-	text-align: left;
-	background: pink;
-	max-width: 500px;
-	max-height: 350px;
-	margin: auto;
-	padding: 30px 30px 30px 30px;
-}
 button {
 	background-color: pink;
     border: black;
@@ -99,17 +82,18 @@ button {
      display: inline-block;
     font-size: 16px;
 }
+
+
 img {
 	position: auto;
 	max-width: 300px;
 	margin: auto;
 	padding: 30px 30px;
 }
+
 #overlay {
 	position: absolute;
 	left: 50%;
 	margin-left: -100px;
-
-
 
 }

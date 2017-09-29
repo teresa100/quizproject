@@ -10,17 +10,15 @@
 	</head>
 
 	<body class="background1">
-		<div class="container1">
 			<div class = "row">
-				<div class ="col-md-12">
+				<div class ="col-md-12 column1">
 					<img src="/static/take-quiz.gif" alt="hello">
 				</div>	
 			</div>
-		</div>
 		
 	<div class="row">	
 		{% for quiz in quizzes %}
-			<div class= "col-md-6 column2"><h3>{{ quiz.name }}</h2>
+			<div class= "col-md-6 column3"><h3>{{ quiz.name }}</h2>
 	                <p>{{ quiz.description }}</p>
 				<button><a href="{% url 'quiz_page' quiz.quiz_number %}">Starta quiz!</a>
 		</div>
