@@ -28,10 +28,11 @@ p {
 
 /*din nästa kolumn på startsidan och sista sidan*/
 .column2 {
+	position: center;
 	border-radius: 35px;
 	text-align: center;
 	background: none;
-	max-width: 800px;
+	max-width: 500px;
 	max-height: 350px;
 	margin: auto;
 	padding: 30px 30px 30px 30px;
@@ -49,7 +50,6 @@ p {
 }
 
 .background1 {
-	background: url(/static/glass-melted.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -73,7 +73,7 @@ p {
 
 
 button {
-	background-color: pink;
+	background-color: white;
     border: black;
     border-radius: 5px;
     padding: 10px 30px;
